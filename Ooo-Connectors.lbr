@@ -762,6 +762,15 @@ Kycon, Inc. STX-3000</description>
 <pad name="3" x="5.08" y="0" drill="1" diameter="1.6764" rot="R90"/>
 <pad name="4" x="7.62" y="0" drill="1" diameter="1.6764" rot="R90"/>
 </package>
+<package name="PHD_1X5">
+<pad name="1" x="0" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<text x="-1.3462" y="1.8288" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<pad name="2" x="2.54" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="4" x="7.62" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="5" x="10.16" y="0" drill="1" diameter="1.6764" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JST-4">
@@ -1147,6 +1156,19 @@ Kycon, Inc. STX-3000</description>
 </symbol>
 <symbol name="MOUNTING">
 <pin name="MT" x="0" y="0" length="middle"/>
+</symbol>
+<symbol name="PHD_1X5">
+<wire x1="3.81" y1="-7.62" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="7.62" x2="-3.81" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="7.62" x2="-3.81" y2="-7.62" width="0.4064" layer="94"/>
+<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<text x="-3.81" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="0" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="3" x="0" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="4" x="0" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="5" x="0" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<wire x1="3.81" y1="-7.62" x2="-3.81" y2="-7.62" width="0.4064" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1615,6 +1637,25 @@ Kycon, Inc. STX-3000</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PHD_1X5">
+<gates>
+<gate name="G$1" symbol="PHD_1X5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PHD_1X5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
